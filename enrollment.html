@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enrollment|DMY Coaching</title>
+  <link rel="stylesheet" href="enrollment.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="dmy.png" height="45" />COACHING</div>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="droplist">Courses</a>
+          <div class="dropdown-content">
+            <a href="science.html">Science</a>
+            <a href="math.html">Math</a>
+            <a href="ict.html">ICT</a>
+          </div>
+        </li>
+        
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="dropdown">
+          <a href="signup.html" class="highlight">Sign Up</a>
+        </li>
+        &nbsp;&nbsp;
+        <li class="dropdown">
+          <a href="login.html" class="droplist">Log In</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>COACHING FOR KIDS</h1>
+    <p>Interactive, lively and affordable coaching sessions for kids</p>
+    <div class="monkey">🌞📖</div>
+  </section>
+
+  <section class="content">
+    <h2>Enrollment Form</h2>
+    <div class="description">
+      <p>Please fill out the form below to enroll.</p>
+    </div>
+
+    <div class="form-box">
+      <form action="enroll_process.php" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>Course Selection:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="courses[]" value="Science"> Science</label>
+          <label><input type="checkbox" name="courses[]" value="Math"> Math</label>
+          <label><input type="checkbox" name="courses[]" value="ICT"> ICT</label>
+        </div>
+
+        <label for="schoolName">School Name:</label>
+        <input type="text" id="schoolName" name="schoolName" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+
+        <div class="submit-button-wrapper">
+          <button type="submit">Enroll Now</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

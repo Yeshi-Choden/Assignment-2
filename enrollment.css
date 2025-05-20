@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #f8f8f8;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4b2e2e;
+  padding: 10px 20px;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+
+.droplist {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #e7b14c;
+  color: #4b2e2e;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav a.highlight {
+  background: #e7b14c;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.hero {
+  background: linear-gradient(#a8d08d, #a8d08d);
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.monkey {
+  font-size: 3em;
+  margin-top: 10px;
+}
+
+.content {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  color: #f4a300;
+  font-size: 2.0em;
+  margin-bottom: 15px;
+}
+
+.description p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.enroll-box {
+  background-color: #ffffff;
+  border: 2px solid #e7b14c;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  flex: 0 0 140px;
+  font-weight: bold;
+  color: #4b2e2e;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea,
+.form-group select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.checkbox-group {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  color: #4b2e2e;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.enroll-submit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.enroll-submit button {
+  background-color: #e7b14c;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4b2e2e;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-submit button:hover {
+  background-color: #d49f2c;
+}
