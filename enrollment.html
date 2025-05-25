@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Enrollment|DMY Coaching</title>
-  <link rel="stylesheet" href="enrollment.css" />
+  <title>Enrolment|DMY Coaching</title>
+  <link rel="stylesheet" href="enrollment.css"/>
   <script src="script.js"></script>
 </head>
 <body>
@@ -13,11 +13,7 @@
     <nav>
       <ul>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="droplist">Courses</a>
-          <div class="dropdown-content">
-            <a href="science.html">Science</a>
-            <a href="math.html">Math</a>
-            <a href="ict.html">ICT</a>
+          <a href="#" id="coursesLink" class="droplist">Course</a>
           </div>
         </li>
         
@@ -28,7 +24,7 @@
         </li>
         &nbsp;&nbsp;
         <li class="dropdown">
-          <a href="login.html" class="droplist">Log In</a>
+          <a href="about.html" class="droplist">Log In</a>
         </li>
       </ul>
     </nav>
@@ -41,45 +37,54 @@
   </section>
 
   <section class="content">
-    <h2>Enrollment Form</h2>
-    <div class="description">
-      <p>Please fill out the form below to enroll.</p>
+       <div class="description">
+      <p>Please fill the form below to enrol</p> 
     </div>
 
-    <div class="form-box">
+    <div class="form-group">
       <form action="enroll_process.php" method="post">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
 
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
 
         <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required>
+        <input type="date" id="dob" name="dob" required><br><br>
 
-        <label>Course Selection:</label>
+        
         <div class="checkbox-group">
-          <label><input type="checkbox" name="courses[]" value="Science"> Science</label>
-          <label><input type="checkbox" name="courses[]" value="Math"> Math</label>
-          <label><input type="checkbox" name="courses[]" value="ICT"> ICT</label>
-        </div>
+		      <label>Course Selection:</label>
+          <input type="checkbox" name="courses[]" value="Science"> Science
+          <input type="checkbox" name="courses[]" value="Math"> Math
+          <input type="checkbox" name="courses[]" value="ICT"> ICT
+        </div><br>
 
         <label for="schoolName">School Name:</label>
-        <input type="text" id="schoolName" name="schoolName" required>
+        <input type="text" id="schoolName" name="schoolName" required><br><br>
 
         <label for="state">State:</label>
-        <input type="text" id="state" name="state" required>
+        <input type="text" id="state" name="state" required><br><br>
 
         <label for="country">Country:</label>
-        <input type="text" id="country" name="country" required>
+        <input type="text" id="country" name="country" required><br><br>
 
-        <div class="submit-button-wrapper">
-          <button type="submit">Enroll Now</button>
+        <div class="enrol-submit">
+          <button type="submit">Enrol Now</button>
         </div>
       </form>
     </div>
   </section>
 
-  <script src="script.js"></script>
+   <script>
+  document.getElementById("coursesLink").addEventListener("click", function(event) {
+    event.preventDefault(); // prevent default navigation
+
+    // Show the required message
+    alert("Please login or signup to access the courses available");
+  });
+</script>
+
+
 </body>
 </html>
