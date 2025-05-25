@@ -75,50 +75,48 @@ nav a.highlight {
 .hero {
   background: linear-gradient(#a8d08d, #a8d08d);
   text-align: center;
-  padding: 50px 20px;
+  padding: 0.5px 20px;
   color: white;
   position: relative;
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.2em;
-  margin-bottom: 15px;
+  font-size: 1em;
+  margin-bottom: 1px;
 }
 
 .monkey {
-  font-size: 3em;
+  font-size: 2.5em;
   margin-top: 10px;
 }
 
 .content {
-  padding: 40px 20px;
+  padding: 20px 20px;
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
 }
 
-.content h2 {
-  color: #f4a300;
-  font-size: 2.0em;
-  margin-bottom: 15px;
-}
+
 
 .description p {
   font-size: 1.1em;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
-.enroll-box {
+.form-group {
   background-color: #ffffff;
   border: 2px solid #e7b14c;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content:center;
   text-align: left;
 }
 
@@ -154,7 +152,7 @@ textarea {
 .checkbox-group {
   flex: 1;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .checkbox-group label {
@@ -164,16 +162,17 @@ textarea {
 }
 
 .checkbox-group input[type="checkbox"] {
-  margin-right: 5px;
+  margin-right: 1px;
   cursor: pointer;
 }
 
-.enroll-submit {
+.enrol-submit {
   text-align: center;
   margin-top: 20px;
+
 }
 
-.enroll-submit button {
+.enrol-submit button {
   background-color: #e7b14c;
   border: none;
   border-radius: 8px;
@@ -183,8 +182,9 @@ textarea {
   color: #4b2e2e;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
 }
 
-.enroll-submit button:hover {
+.enrol-submit button:hover {
   background-color: #d49f2c;
 }
