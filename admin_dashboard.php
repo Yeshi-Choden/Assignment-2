@@ -13,7 +13,14 @@
     <nav>
 	<ul>
 	<li class="dropdown">
-      <a href="#" id="coursesLink" class="droplist">Course</a>
+    <a href="course.html" class="droplist">Courses</a>
+		<div class="dropdown-content">
+			<a href="course.html" >Science</a>
+			<a href="course.html" >Math</a>
+			<a href="course.html" >ICT</a>
+		</div>
+    <a href="about.html" id="coursesLink" class="droplist">About</a>
+		<a href="index.html" id="coursesLink" class="droplist">Log out</a>
 		
 		</li>
       
@@ -55,7 +62,7 @@ $enrollments = $conn->query("SELECT * FROM enrollments");
 <html>
 <head><title>Admin Dashboard</title></head>
 <body>
-<h2>Welcome Admin: <?= $_SESSION['admin'] ?></h2>
+<h1><center>Welcome Admin: <?= $_SESSION['admin'] ?></center></h1>
 
 <h3>Users</h3>
 <table border="1" cellpadding="5">
