@@ -1,14 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Deki-Madan-Yeshi Coaching for Kids</title>
   <link rel="stylesheet" href="about.css">
-  <script>
-  // Simulate login: set name in session storage
-  sessionStorage.setItem("userName", "user");
-  </script>
+  
 </head>
 <body>
   <header>
@@ -28,12 +25,10 @@
 		<a href="enrollment.html" class="droplist">Enroll</a>
 				</li>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<li class="dropdown">
-		<a href="signup.html" class="highlight">Sign Up</a>
-		</li>
+		
 		&nbsp;&nbsp;
 		<li class="dropdown">
-		<a href="login.html" class="droplist">Log In</a>
+		<a href="index.html" class="droplist">Log out</a>
 		</li>	
 	</ul>
     </nav>
@@ -42,33 +37,35 @@
   <section class="hero">
   <h1>COACHING FOR KIDS</h1>
   <p>Interactive, lively and affordable coaching sessions for kids</p>
-  <div class="monkey">🌞📖</div><br><br>
-  <h3 id="greeting">Hi!</h3>
+  <div class="monkey">🌞📖</div>
+  <h3 id="greeting">Hi!<span id="username"></span></h3>
 </section>
 
+  <center>
   <section class="content">
-    <h2>DMY Coaching Class</h2>
     <div class="description">
       <p>A STEM coaching class that offers hands-on learning and expert guidance to help students excel in science, technology, engineering, and mathematics.</p>
    </div>
     <div class="video-preview">
-      <video width="500" height="300" id="videoPlayer" controls="controls"> <!-- MP4 Video -->
+      <video width="500" height="300" id="videoPlayer" controls autoplay muted loop> <!-- MP4 Video -->
       <source src="hero.mp4" type="video/mp4" alt="Video Preview">
     </div>
-  </section>
+    <div class="enrol-submit"><button onclick="window.open('enrollment.html', '_blank')">Enrol Now</button></div>
+  </section></center>
 
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const userName = sessionStorage.getItem("userName");
-      if (userName) {
-        const greeting = document.getElementById("greeting");
-        if (greeting) {
-          greeting.textContent = `Hi, ${userName}`;
-        }
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const userName = sessionStorage.getItem("userName");
+    if (userName) {
+      const greeting = document.getElementById("greeting");
+      if (greeting) {
+        greeting.textContent = `Hi, ${userName}`;
       }
-    });
-  </script>
+    }
+  });
+</script>
+
 
 
 </body>
