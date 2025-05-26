@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Admin Login</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Login</title>
-  <link rel="stylesheet" href="about.css">
-  <script>
-  // Simulate login: set name in session storage
-  sessionStorage.setItem("userName", "user");
-  </script>
-
+  <title>Index</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="script.js"></script>
 </head>
 <body>
-    <header>
+   <header>
     <div class="logo"><img src="dmy.png" height="45">COACHING</div>
     <nav>
+	<ul>
+	<li class="dropdown">
+      <a href="index.html" id="coursesLink" class="droplist">Log out</a>
+		
+		</li>
+      
+		
+	</ul>
+    </nav>
   </header>
-
   <section class="hero">
-  <h1>Admin Login</h1> 
-
+    <h1>COACHING FOR KIDS</h1>
+    <p>Interactive, lively and affordable coaching seesions for kids</p> 
   </section>
-  <br><br>
-  <center><form action="admin_login.php" method="post" style=" 
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: white;
-    border: 2px solid #e7b14c;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #4b2e2e;">
+  <center><h2>Admin Login</h2>
+  <form action="admin_login.php" method="post">
     <label>Username:</label>
     <input type="text" name="username" required><br><br>
     <label>Password:</label>
     <input type="password" name="password" required><br><br>
     <button type="submit">Login</button>
-  </form></center>
+  </form> </center>
 </body>
 </html>

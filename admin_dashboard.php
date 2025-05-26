@@ -13,14 +13,7 @@
     <nav>
 	<ul>
 	<li class="dropdown">
-    <a href="course.html" class="droplist">Courses</a>
-		<div class="dropdown-content">
-			<a href="course.html" >Science</a>
-			<a href="course.html" >Math</a>
-			<a href="course.html" >ICT</a>
-		</div>
-    <a href="about.html" id="coursesLink" class="droplist">About</a>
-		<a href="index.html" id="coursesLink" class="droplist">Log out</a>
+      <a href="index.html" id="coursesLink" class="droplist">Log out</a>
 		
 		</li>
       
